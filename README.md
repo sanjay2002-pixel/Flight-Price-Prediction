@@ -1,112 +1,82 @@
-Flight Price Prediction using Machine Learning
-📌 Problem Statement
+# ✈️ Flight Price Prediction using Machine Learning
+
+## 📌 Problem Statement
 
 Airline ticket prices fluctuate dynamically based on multiple factors such as airline, journey date, duration, and number of stops.
 
-The objective of this project is to build a machine learning regression model that accurately predicts flight prices using historical booking data.
+The objective of this project is to build a **machine learning regression model** that accurately predicts flight prices using historical booking data.
+
+### 🎯 Business Impact
 
 This solution can help:
 
-Customers identify optimal booking times
+- Customers identify optimal booking times  
+- Travel companies forecast pricing trends  
+- Airlines analyze demand patterns  
 
-Travel companies forecast pricing trends
+---
 
-Airlines analyze demand patterns
+## 📊 Dataset Overview
 
-📊 Dataset Overview
+The dataset contains the following features:
 
-The dataset contains:
+- Airline  
+- Source  
+- Destination  
+- Journey Date  
+- Duration  
+- Total Stops  
+- Additional Information  
+- **Price (Target Variable)**  
 
-Airline
+---
 
-Source & Destination
+## 🛠️ Project Workflow
 
-Journey Date
+### 1️⃣ Data Cleaning
+- Removed null values  
+- Converted date-time features into structured format  
+- Extracted journey day and month  
 
-Duration
+### 2️⃣ Exploratory Data Analysis (EDA)
+- Analyzed price trends by airline  
+- Studied the impact of total stops and duration  
+- Identified and handled outliers  
 
-Total Stops
+### 3️⃣ Feature Engineering
+- Applied one-hot encoding for categorical variables  
+- Extracted time-based features  
+- Removed multicollinearity  
 
-Additional Information
+### 4️⃣ Model Building
 
-Price (Target Variable)
+Models implemented:
 
-🛠️ Project Workflow
-1️⃣ Data Cleaning
+- Linear Regression  
+- Random Forest Regressor  
 
-Removed null values
+### 5️⃣ Model Evaluation
 
-Converted date-time features
+Evaluation metrics used:
 
-Extracted journey day & month
+- R² Score  
+- Mean Absolute Error (MAE)  
+- Root Mean Squared Error (RMSE)  
 
-2️⃣ Exploratory Data Analysis (EDA)
+Random Forest performed better due to its ability to capture non-linear relationships in the dataset.
 
-Analyzed price trends by airline
+---
 
-Studied impact of stops & duration
+## 📈 Key Insights
 
-Identified outliers
+- Flights with more stops tend to be cheaper  
+- Duration significantly impacts ticket price  
+- Airline choice strongly influences pricing  
 
-3️⃣ Feature Engineering
+---
 
-One-hot encoding for categorical variables
+## 🧰 Tech Stack
 
-Extracted time-based features
-
-Removed multicollinearity
-
-4️⃣ Model Building
-
-Models Implemented:
-
-Linear Regression
-
-Random Forest Regressor
-
-5️⃣ Model Evaluation
-
-Evaluation Metrics:
-
-R² Score
-
-Mean Absolute Error (MAE)
-
-Root Mean Squared Error (RMSE)
-
-Random Forest performed better due to its ability to capture non-linear relationships.
-
-📈 Key Insights
-
-Flights with more stops tend to be cheaper
-
-Duration significantly impacts ticket price
-
-Airline choice strongly influences pricing
-
-🧰 Tech Stack
-
-Python
-
-Pandas
-
-NumPy
-
-Matplotlib
-
-Seaborn
-
-Scikit-learn
-
-🚀 How to Run
-git clone <repo-link>
-pip install -r requirements.txt
-jupyter notebook
-
-📌 Future Improvements
-
-Hyperparameter tuning
-
-Deploy model using Flask/Streamlit
-
-Add real-time pricing API
+- Python  
+- Pandas  
+- NumPy  

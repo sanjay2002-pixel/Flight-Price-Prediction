@@ -1,12 +1,12 @@
-# ✈️ Flight Price Prediction using Machine Learning
+#  Flight Price Prediction using Machine Learning
 
-## 📌 Problem Statement
+##  Problem Statement
 
 Airline ticket prices fluctuate dynamically based on multiple factors such as airline, journey date, duration, and number of stops.
 
 The objective of this project is to build a **machine learning regression model** that accurately predicts flight prices using historical booking data.
 
-### 🎯 Business Impact
+###  Business Impact
 
 This solution can help:
 
@@ -14,9 +14,9 @@ This solution can help:
 - Travel companies forecast pricing trends  
 - Airlines analyze demand patterns  
 
----
 
-## 📊 Dataset Overview
+
+##  Dataset Overview
 
 The dataset contains the following features:
 
@@ -29,9 +29,9 @@ The dataset contains the following features:
 - Additional Information  
 - **Price (Target Variable)**  
 
----
 
-## 🛠️ Project Workflow
+
+##  Project Workflow
 
 ### 1️⃣ Data Cleaning
 - Removed null values  
@@ -65,7 +65,7 @@ Evaluation metrics used:
 
 Random Forest performed better due to its ability to capture non-linear relationships in the dataset.
 
----
+
 
 ## 📈 Key Insights
 
@@ -73,7 +73,7 @@ Random Forest performed better due to its ability to capture non-linear relation
 - Duration significantly impacts ticket price  
 - Airline choice strongly influences pricing  
 
----
+
 
 ## 🧰 Tech Stack
 
